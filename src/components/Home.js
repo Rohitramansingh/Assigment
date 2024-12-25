@@ -233,7 +233,12 @@ const Home = () => {
                         </Button>
 
                         <Button>
-                          <DeleteIcon style={{ color: "#6c5ffc" }} />
+                          <DeleteIcon
+                            style={{ color: "#6c5ffc" }}
+                            onClick={() => {
+                              setDeleteDialog(val?.studentId);
+                            }}
+                          />
                         </Button>
                       </div>
                     </div>
