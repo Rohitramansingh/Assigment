@@ -50,7 +50,7 @@ const Home = () => {
     if (search.trim() == "") {
       setData(alldata)
     } else {
-      const filterdata = data.filter((student) =>
+      const filterdata = alldata.filter((student) =>
         student.name.toLowerCase().includes(search.toLowerCase())
       );
       setData(filterdata)
